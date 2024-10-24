@@ -7,8 +7,8 @@ public class Nomor2 {
         Scanner scanner = new Scanner(System.in);
         
         // Tarif dan persentase pelayanan
-        int[] tarif = {50000, 40000, 30000}; 
-        double[] persentasePelayanan = {0.30, 0.20, 0.10}; 
+        int tarif = {50000, 40000, 30000}; 
+        double persentasePelayanan = {0.30, 0.20, 0.10}; 
         
         System.out.print("Masukkan jumlah pelanggan: ");
         int jumlahPelanggan = scanner.nextInt();
@@ -20,9 +20,9 @@ public class Nomor2 {
             int lamaMenginap = scanner.nextInt();
             
             // Hitung biaya menginap
-            double biayaMenginap = lamaMenginap * tarif[tipeBungalow];
+            double biayaMenginap = lamaMenginap * tarif;
             // Hitung biaya pelayanan
-            double biayaPelayanan = biayaMenginap * persentasePelayanan[tipeBungalow];
+            double biayaPelayanan = biayaMenginap * persentasePelayanan;
             // Hitung total biaya
             double totalBiaya = biayaMenginap + biayaPelayanan;
             
