@@ -14,11 +14,11 @@ public class Nomor1 {
 
         // Hitung komisi berdasarkan ketentuan
         if (totalPenjualan <= 500000) {
-            komisi = totalPenjualan * 0.10; // 10% untuk penjualan ≤ Rp 500.000
+            komisi = totalPenjualan * 0.10; 
         } else {
-            komisi = 500000 * 0.10; // Komisi untuk Rp 500.000 pertama
+            komisi = 500000 * 0.10;
             double sisaPenjualan = 0;
-            komisi += sisaPenjualan * 0.15; // 15% untuk sisa penjualan
+            komisi += sisaPenjualan * 0.15; 
         }
 
         // Output hasil
